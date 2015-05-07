@@ -1,0 +1,940 @@
+对象类型解析
+解析对象 test
+	解析数组 test2
+	生成类 Test2:
+		class CTest2
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<unsigned int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<unsigned int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			unsigned int GetArrayMember(){return m_uArrayMember;}
+			void SetArrayMember(unsigned int para){ m_uArrayMember = para;}
+		private:
+			string m_sLastError;
+			unsigned int m_uArrayMember;
+			vector<unsigned int> m_vElemGroup;
+		};
+
+	打印成员:
+	public:
+		class CTest2
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<unsigned int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<unsigned int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			unsigned int GetArrayMember(){return m_uArrayMember;}
+			void SetArrayMember(unsigned int para){ m_uArrayMember = para;}
+		private:
+			string m_sLastError;
+			unsigned int m_uArrayMember;
+			vector<unsigned int> m_vElemGroup;
+		};
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		CTest2 GetTest2(){return m_arrayTest2;}
+		void SetTest2(CTest2 para){ m_arrayTest2 = para;}
+	private:
+		string m_sLastError;
+		CTest2 m_arrayTest2;
+
+	解析数组 test3
+	生成类 Test3:
+		class CTest3
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<uint64_t> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<uint64_t> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			uint64_t GetArrayMember(){return m_u64ArrayMember;}
+			void SetArrayMember(uint64_t para){ m_u64ArrayMember = para;}
+		private:
+			string m_sLastError;
+			uint64_t m_u64ArrayMember;
+			vector<uint64_t> m_vElemGroup;
+		};
+
+	打印成员:
+	public:
+		class CTest3
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<uint64_t> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<uint64_t> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			uint64_t GetArrayMember(){return m_u64ArrayMember;}
+			void SetArrayMember(uint64_t para){ m_u64ArrayMember = para;}
+		private:
+			string m_sLastError;
+			uint64_t m_u64ArrayMember;
+			vector<uint64_t> m_vElemGroup;
+		};
+		class CTest2
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<unsigned int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<unsigned int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			unsigned int GetArrayMember(){return m_uArrayMember;}
+			void SetArrayMember(unsigned int para){ m_uArrayMember = para;}
+		private:
+			string m_sLastError;
+			unsigned int m_uArrayMember;
+			vector<unsigned int> m_vElemGroup;
+		};
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		CTest2 GetTest2(){return m_arrayTest2;}
+		void SetTest2(CTest2 para){ m_arrayTest2 = para;}
+		CTest3 GetTest3(){return m_arrayTest3;}
+		void SetTest3(CTest3 para){ m_arrayTest3 = para;}
+	private:
+		string m_sLastError;
+		CTest2 m_arrayTest2;
+		CTest3 m_arrayTest3;
+
+	解析数组 test4
+	生成类 Test4:
+		class CTest4
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<double> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<double> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			double GetArrayMember(){return m_dArrayMember;}
+			void SetArrayMember(double para){ m_dArrayMember = para;}
+		private:
+			string m_sLastError;
+			double m_dArrayMember;
+			vector<double> m_vElemGroup;
+		};
+
+	打印成员:
+	public:
+		class CTest4
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<double> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<double> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			double GetArrayMember(){return m_dArrayMember;}
+			void SetArrayMember(double para){ m_dArrayMember = para;}
+		private:
+			string m_sLastError;
+			double m_dArrayMember;
+			vector<double> m_vElemGroup;
+		};
+		class CTest3
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<uint64_t> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<uint64_t> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			uint64_t GetArrayMember(){return m_u64ArrayMember;}
+			void SetArrayMember(uint64_t para){ m_u64ArrayMember = para;}
+		private:
+			string m_sLastError;
+			uint64_t m_u64ArrayMember;
+			vector<uint64_t> m_vElemGroup;
+		};
+		class CTest2
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<unsigned int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<unsigned int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			unsigned int GetArrayMember(){return m_uArrayMember;}
+			void SetArrayMember(unsigned int para){ m_uArrayMember = para;}
+		private:
+			string m_sLastError;
+			unsigned int m_uArrayMember;
+			vector<unsigned int> m_vElemGroup;
+		};
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		CTest2 GetTest2(){return m_arrayTest2;}
+		void SetTest2(CTest2 para){ m_arrayTest2 = para;}
+		CTest3 GetTest3(){return m_arrayTest3;}
+		void SetTest3(CTest3 para){ m_arrayTest3 = para;}
+		CTest4 GetTest4(){return m_arrayTest4;}
+		void SetTest4(CTest4 para){ m_arrayTest4 = para;}
+	private:
+		string m_sLastError;
+		CTest2 m_arrayTest2;
+		CTest3 m_arrayTest3;
+		CTest4 m_arrayTest4;
+
+	解析数组 test5
+	生成类 Test5:
+		class CTest5
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<string> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<string> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			string GetArrayMember(){return m_sArrayMember;}
+			void SetArrayMember(string para){ m_sArrayMember = para;}
+		private:
+			string m_sLastError;
+			string m_sArrayMember;
+			vector<string> m_vElemGroup;
+		};
+
+	打印成员:
+	public:
+		class CTest5
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<string> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<string> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			string GetArrayMember(){return m_sArrayMember;}
+			void SetArrayMember(string para){ m_sArrayMember = para;}
+		private:
+			string m_sLastError;
+			string m_sArrayMember;
+			vector<string> m_vElemGroup;
+		};
+		class CTest4
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<double> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<double> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			double GetArrayMember(){return m_dArrayMember;}
+			void SetArrayMember(double para){ m_dArrayMember = para;}
+		private:
+			string m_sLastError;
+			double m_dArrayMember;
+			vector<double> m_vElemGroup;
+		};
+		class CTest3
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<uint64_t> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<uint64_t> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			uint64_t GetArrayMember(){return m_u64ArrayMember;}
+			void SetArrayMember(uint64_t para){ m_u64ArrayMember = para;}
+		private:
+			string m_sLastError;
+			uint64_t m_u64ArrayMember;
+			vector<uint64_t> m_vElemGroup;
+		};
+		class CTest2
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<unsigned int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<unsigned int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			unsigned int GetArrayMember(){return m_uArrayMember;}
+			void SetArrayMember(unsigned int para){ m_uArrayMember = para;}
+		private:
+			string m_sLastError;
+			unsigned int m_uArrayMember;
+			vector<unsigned int> m_vElemGroup;
+		};
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		CTest2 GetTest2(){return m_arrayTest2;}
+		void SetTest2(CTest2 para){ m_arrayTest2 = para;}
+		CTest3 GetTest3(){return m_arrayTest3;}
+		void SetTest3(CTest3 para){ m_arrayTest3 = para;}
+		CTest4 GetTest4(){return m_arrayTest4;}
+		void SetTest4(CTest4 para){ m_arrayTest4 = para;}
+		CTest5 GetTest5(){return m_arrayTest5;}
+		void SetTest5(CTest5 para){ m_arrayTest5 = para;}
+	private:
+		string m_sLastError;
+		CTest2 m_arrayTest2;
+		CTest3 m_arrayTest3;
+		CTest4 m_arrayTest4;
+		CTest5 m_arrayTest5;
+
+	解析数组 test6
+		解析对象 ArrayMember
+			打印成员:
+					public:
+						void SetLastError( string para){m_sLastError = para;};
+						string GetLastError(){return m_sLastError;};
+						bool Unmarshal( const string& sJson );
+						bool Unmarshal( rapidjson::Value& value );
+						string Marshal();
+						string GetTtt(){return m_sTtt;}
+						void SetTtt(string para){ m_sTtt = para;}
+					private:
+						string m_sLastError;
+						string m_sTtt;
+
+			打印成员:
+					public:
+						void SetLastError( string para){m_sLastError = para;};
+						string GetLastError(){return m_sLastError;};
+						bool Unmarshal( const string& sJson );
+						bool Unmarshal( rapidjson::Value& value );
+						string Marshal();
+						string GetTtt(){return m_sTtt;}
+						void SetTtt(string para){ m_sTtt = para;}
+						int GetRrr(){return m_nRrr;}
+						void SetRrr(int para){ m_nRrr = para;}
+					private:
+						string m_sLastError;
+						string m_sTtt;
+						int m_nRrr;
+
+		生成类 ArrayMember:
+				class CArrayMember
+				{
+				public:
+					void SetLastError( string para){m_sLastError = para;};
+					string GetLastError(){return m_sLastError;};
+					bool Unmarshal( const string& sJson );
+					bool Unmarshal( rapidjson::Value& value );
+					string Marshal();
+					string GetTtt(){return m_sTtt;}
+					void SetTtt(string para){ m_sTtt = para;}
+					int GetRrr(){return m_nRrr;}
+					void SetRrr(int para){ m_nRrr = para;}
+				protected:
+					bool ParseTtt(rapidjson::Value& value);
+					bool ParseRrr(rapidjson::Value& value);
+				private:
+					string m_sLastError;
+					string m_sTtt;
+					int m_nRrr;
+				};
+
+	生成类 Test6:
+		class CTest6
+		{
+		public:
+			class CArrayMember
+			{
+			public:
+				void SetLastError( string para){m_sLastError = para;};
+				string GetLastError(){return m_sLastError;};
+				bool Unmarshal( const string& sJson );
+				bool Unmarshal( rapidjson::Value& value );
+				string Marshal();
+				string GetTtt(){return m_sTtt;}
+				void SetTtt(string para){ m_sTtt = para;}
+				int GetRrr(){return m_nRrr;}
+				void SetRrr(int para){ m_nRrr = para;}
+			protected:
+				bool ParseTtt(rapidjson::Value& value);
+				bool ParseRrr(rapidjson::Value& value);
+			private:
+				string m_sLastError;
+				string m_sTtt;
+				int m_nRrr;
+			};
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<CArrayMember> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<CArrayMember> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			CArrayMember GetArrayMember(){return m_objectArrayMember;}
+			void SetArrayMember(CArrayMember para){ m_objectArrayMember = para;}
+		private:
+			string m_sLastError;
+			CArrayMember m_objectArrayMember;
+			vector<CArrayMember> m_vElemGroup;
+		};
+
+	打印成员:
+	public:
+		class CTest6
+		{
+		public:
+			class CArrayMember
+			{
+			public:
+				void SetLastError( string para){m_sLastError = para;};
+				string GetLastError(){return m_sLastError;};
+				bool Unmarshal( const string& sJson );
+				bool Unmarshal( rapidjson::Value& value );
+				string Marshal();
+				string GetTtt(){return m_sTtt;}
+				void SetTtt(string para){ m_sTtt = para;}
+				int GetRrr(){return m_nRrr;}
+				void SetRrr(int para){ m_nRrr = para;}
+			protected:
+				bool ParseTtt(rapidjson::Value& value);
+				bool ParseRrr(rapidjson::Value& value);
+			private:
+				string m_sLastError;
+				string m_sTtt;
+				int m_nRrr;
+			};
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<CArrayMember> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<CArrayMember> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			CArrayMember GetArrayMember(){return m_objectArrayMember;}
+			void SetArrayMember(CArrayMember para){ m_objectArrayMember = para;}
+		private:
+			string m_sLastError;
+			CArrayMember m_objectArrayMember;
+			vector<CArrayMember> m_vElemGroup;
+		};
+		class CTest5
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<string> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<string> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			string GetArrayMember(){return m_sArrayMember;}
+			void SetArrayMember(string para){ m_sArrayMember = para;}
+		private:
+			string m_sLastError;
+			string m_sArrayMember;
+			vector<string> m_vElemGroup;
+		};
+		class CTest4
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<double> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<double> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			double GetArrayMember(){return m_dArrayMember;}
+			void SetArrayMember(double para){ m_dArrayMember = para;}
+		private:
+			string m_sLastError;
+			double m_dArrayMember;
+			vector<double> m_vElemGroup;
+		};
+		class CTest3
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<uint64_t> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<uint64_t> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			uint64_t GetArrayMember(){return m_u64ArrayMember;}
+			void SetArrayMember(uint64_t para){ m_u64ArrayMember = para;}
+		private:
+			string m_sLastError;
+			uint64_t m_u64ArrayMember;
+			vector<uint64_t> m_vElemGroup;
+		};
+		class CTest2
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<unsigned int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<unsigned int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			unsigned int GetArrayMember(){return m_uArrayMember;}
+			void SetArrayMember(unsigned int para){ m_uArrayMember = para;}
+		private:
+			string m_sLastError;
+			unsigned int m_uArrayMember;
+			vector<unsigned int> m_vElemGroup;
+		};
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		CTest2 GetTest2(){return m_arrayTest2;}
+		void SetTest2(CTest2 para){ m_arrayTest2 = para;}
+		CTest3 GetTest3(){return m_arrayTest3;}
+		void SetTest3(CTest3 para){ m_arrayTest3 = para;}
+		CTest4 GetTest4(){return m_arrayTest4;}
+		void SetTest4(CTest4 para){ m_arrayTest4 = para;}
+		CTest5 GetTest5(){return m_arrayTest5;}
+		void SetTest5(CTest5 para){ m_arrayTest5 = para;}
+		CTest6 GetTest6(){return m_arrayTest6;}
+		void SetTest6(CTest6 para){ m_arrayTest6 = para;}
+	private:
+		string m_sLastError;
+		CTest2 m_arrayTest2;
+		CTest3 m_arrayTest3;
+		CTest4 m_arrayTest4;
+		CTest5 m_arrayTest5;
+		CTest6 m_arrayTest6;
+
+	解析数组 test1
+	生成类 Test1:
+		class CTest1
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			int GetArrayMember(){return m_nArrayMember;}
+			void SetArrayMember(int para){ m_nArrayMember = para;}
+		private:
+			string m_sLastError;
+			int m_nArrayMember;
+			vector<int> m_vElemGroup;
+		};
+
+	打印成员:
+	public:
+		class CTest1
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			int GetArrayMember(){return m_nArrayMember;}
+			void SetArrayMember(int para){ m_nArrayMember = para;}
+		private:
+			string m_sLastError;
+			int m_nArrayMember;
+			vector<int> m_vElemGroup;
+		};
+		class CTest6
+		{
+		public:
+			class CArrayMember
+			{
+			public:
+				void SetLastError( string para){m_sLastError = para;};
+				string GetLastError(){return m_sLastError;};
+				bool Unmarshal( const string& sJson );
+				bool Unmarshal( rapidjson::Value& value );
+				string Marshal();
+				string GetTtt(){return m_sTtt;}
+				void SetTtt(string para){ m_sTtt = para;}
+				int GetRrr(){return m_nRrr;}
+				void SetRrr(int para){ m_nRrr = para;}
+			protected:
+				bool ParseTtt(rapidjson::Value& value);
+				bool ParseRrr(rapidjson::Value& value);
+			private:
+				string m_sLastError;
+				string m_sTtt;
+				int m_nRrr;
+			};
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<CArrayMember> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<CArrayMember> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			CArrayMember GetArrayMember(){return m_objectArrayMember;}
+			void SetArrayMember(CArrayMember para){ m_objectArrayMember = para;}
+		private:
+			string m_sLastError;
+			CArrayMember m_objectArrayMember;
+			vector<CArrayMember> m_vElemGroup;
+		};
+		class CTest5
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<string> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<string> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			string GetArrayMember(){return m_sArrayMember;}
+			void SetArrayMember(string para){ m_sArrayMember = para;}
+		private:
+			string m_sLastError;
+			string m_sArrayMember;
+			vector<string> m_vElemGroup;
+		};
+		class CTest4
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<double> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<double> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			double GetArrayMember(){return m_dArrayMember;}
+			void SetArrayMember(double para){ m_dArrayMember = para;}
+		private:
+			string m_sLastError;
+			double m_dArrayMember;
+			vector<double> m_vElemGroup;
+		};
+		class CTest3
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<uint64_t> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<uint64_t> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			uint64_t GetArrayMember(){return m_u64ArrayMember;}
+			void SetArrayMember(uint64_t para){ m_u64ArrayMember = para;}
+		private:
+			string m_sLastError;
+			uint64_t m_u64ArrayMember;
+			vector<uint64_t> m_vElemGroup;
+		};
+		class CTest2
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			vector<unsigned int> GetElemGroup(){return this ->m_vElemGroup;}
+			void SetElemGroup(vector<unsigned int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+		protected:
+			bool ParseArrayMember(rapidjson::Value& value);
+			unsigned int GetArrayMember(){return m_uArrayMember;}
+			void SetArrayMember(unsigned int para){ m_uArrayMember = para;}
+		private:
+			string m_sLastError;
+			unsigned int m_uArrayMember;
+			vector<unsigned int> m_vElemGroup;
+		};
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		CTest2 GetTest2(){return m_arrayTest2;}
+		void SetTest2(CTest2 para){ m_arrayTest2 = para;}
+		CTest3 GetTest3(){return m_arrayTest3;}
+		void SetTest3(CTest3 para){ m_arrayTest3 = para;}
+		CTest4 GetTest4(){return m_arrayTest4;}
+		void SetTest4(CTest4 para){ m_arrayTest4 = para;}
+		CTest5 GetTest5(){return m_arrayTest5;}
+		void SetTest5(CTest5 para){ m_arrayTest5 = para;}
+		CTest6 GetTest6(){return m_arrayTest6;}
+		void SetTest6(CTest6 para){ m_arrayTest6 = para;}
+		CTest1 GetTest1(){return m_arrayTest1;}
+		void SetTest1(CTest1 para){ m_arrayTest1 = para;}
+	private:
+		string m_sLastError;
+		CTest2 m_arrayTest2;
+		CTest3 m_arrayTest3;
+		CTest4 m_arrayTest4;
+		CTest5 m_arrayTest5;
+		CTest6 m_arrayTest6;
+		CTest1 m_arrayTest1;
+
+生成类 Test:
+class CTest
+{
+public:
+	class CTest1
+	{
+	public:
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		vector<int> GetElemGroup(){return this ->m_vElemGroup;}
+		void SetElemGroup(vector<int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+	protected:
+		bool ParseArrayMember(rapidjson::Value& value);
+		int GetArrayMember(){return m_nArrayMember;}
+		void SetArrayMember(int para){ m_nArrayMember = para;}
+	private:
+		string m_sLastError;
+		int m_nArrayMember;
+		vector<int> m_vElemGroup;
+	};
+	class CTest6
+	{
+	public:
+		class CArrayMember
+		{
+		public:
+			void SetLastError( string para){m_sLastError = para;};
+			string GetLastError(){return m_sLastError;};
+			bool Unmarshal( const string& sJson );
+			bool Unmarshal( rapidjson::Value& value );
+			string Marshal();
+			string GetTtt(){return m_sTtt;}
+			void SetTtt(string para){ m_sTtt = para;}
+			int GetRrr(){return m_nRrr;}
+			void SetRrr(int para){ m_nRrr = para;}
+		protected:
+			bool ParseTtt(rapidjson::Value& value);
+			bool ParseRrr(rapidjson::Value& value);
+		private:
+			string m_sLastError;
+			string m_sTtt;
+			int m_nRrr;
+		};
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		vector<CArrayMember> GetElemGroup(){return this ->m_vElemGroup;}
+		void SetElemGroup(vector<CArrayMember> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+	protected:
+		bool ParseArrayMember(rapidjson::Value& value);
+		CArrayMember GetArrayMember(){return m_objectArrayMember;}
+		void SetArrayMember(CArrayMember para){ m_objectArrayMember = para;}
+	private:
+		string m_sLastError;
+		CArrayMember m_objectArrayMember;
+		vector<CArrayMember> m_vElemGroup;
+	};
+	class CTest5
+	{
+	public:
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		vector<string> GetElemGroup(){return this ->m_vElemGroup;}
+		void SetElemGroup(vector<string> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+	protected:
+		bool ParseArrayMember(rapidjson::Value& value);
+		string GetArrayMember(){return m_sArrayMember;}
+		void SetArrayMember(string para){ m_sArrayMember = para;}
+	private:
+		string m_sLastError;
+		string m_sArrayMember;
+		vector<string> m_vElemGroup;
+	};
+	class CTest4
+	{
+	public:
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		vector<double> GetElemGroup(){return this ->m_vElemGroup;}
+		void SetElemGroup(vector<double> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+	protected:
+		bool ParseArrayMember(rapidjson::Value& value);
+		double GetArrayMember(){return m_dArrayMember;}
+		void SetArrayMember(double para){ m_dArrayMember = para;}
+	private:
+		string m_sLastError;
+		double m_dArrayMember;
+		vector<double> m_vElemGroup;
+	};
+	class CTest3
+	{
+	public:
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		vector<uint64_t> GetElemGroup(){return this ->m_vElemGroup;}
+		void SetElemGroup(vector<uint64_t> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+	protected:
+		bool ParseArrayMember(rapidjson::Value& value);
+		uint64_t GetArrayMember(){return m_u64ArrayMember;}
+		void SetArrayMember(uint64_t para){ m_u64ArrayMember = para;}
+	private:
+		string m_sLastError;
+		uint64_t m_u64ArrayMember;
+		vector<uint64_t> m_vElemGroup;
+	};
+	class CTest2
+	{
+	public:
+		void SetLastError( string para){m_sLastError = para;};
+		string GetLastError(){return m_sLastError;};
+		bool Unmarshal( const string& sJson );
+		bool Unmarshal( rapidjson::Value& value );
+		string Marshal();
+		vector<unsigned int> GetElemGroup(){return this ->m_vElemGroup;}
+		void SetElemGroup(vector<unsigned int> vElemGroup){this ->m_vElemGroup = vElemGroup;}
+	protected:
+		bool ParseArrayMember(rapidjson::Value& value);
+		unsigned int GetArrayMember(){return m_uArrayMember;}
+		void SetArrayMember(unsigned int para){ m_uArrayMember = para;}
+	private:
+		string m_sLastError;
+		unsigned int m_uArrayMember;
+		vector<unsigned int> m_vElemGroup;
+	};
+	void SetLastError( string para){m_sLastError = para;};
+	string GetLastError(){return m_sLastError;};
+	bool Unmarshal( const string& sJson );
+	bool Unmarshal( rapidjson::Value& value );
+	string Marshal();
+	CTest2 GetTest2(){return m_arrayTest2;}
+	void SetTest2(CTest2 para){ m_arrayTest2 = para;}
+	CTest3 GetTest3(){return m_arrayTest3;}
+	void SetTest3(CTest3 para){ m_arrayTest3 = para;}
+	CTest4 GetTest4(){return m_arrayTest4;}
+	void SetTest4(CTest4 para){ m_arrayTest4 = para;}
+	CTest5 GetTest5(){return m_arrayTest5;}
+	void SetTest5(CTest5 para){ m_arrayTest5 = para;}
+	CTest6 GetTest6(){return m_arrayTest6;}
+	void SetTest6(CTest6 para){ m_arrayTest6 = para;}
+	CTest1 GetTest1(){return m_arrayTest1;}
+	void SetTest1(CTest1 para){ m_arrayTest1 = para;}
+protected:
+	bool ParseTest2(rapidjson::Value& value);
+	bool ParseTest3(rapidjson::Value& value);
+	bool ParseTest4(rapidjson::Value& value);
+	bool ParseTest5(rapidjson::Value& value);
+	bool ParseTest6(rapidjson::Value& value);
+	bool ParseTest1(rapidjson::Value& value);
+private:
+	string m_sLastError;
+	CTest2 m_arrayTest2;
+	CTest3 m_arrayTest3;
+	CTest4 m_arrayTest4;
+	CTest5 m_arrayTest5;
+	CTest6 m_arrayTest6;
+	CTest1 m_arrayTest1;
+};
+

@@ -250,8 +250,8 @@ func ProcessObject(className string, tapString string, classSpace string, parseR
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::Document document ;"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::Value jRoot( rapidjson::kObjectType );"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\tthis ->Marshal(jRoot,document);"))
-	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::GenericStringBuffer<rapidjson::UTF8<>> buffer;"))
-	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<>>> writer( buffer );"))
+	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::GenericStringBuffer<rapidjson::UTF8<> > buffer;"))
+	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<> > > writer( buffer );"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\tjRoot.Accept( writer );"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\treturn buffer.GetString();"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("}"))
@@ -260,8 +260,7 @@ func ProcessObject(className string, tapString string, classSpace string, parseR
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("{"))
 	var classFunIntArray []string
 	for key, value := range parseResult {
-		/** 增加函数关键字的解析函数声明 */
-		classHProtectedArray = append(classHProtectedArray, fmt.Sprintf("%s\tbool Parse%s(rapidjson::Value& value);", tapString, formatName(key)))
+
 		/** 增加函数关键字解析函数实现 */
 		var parseInt []string
 		var memberName string
@@ -271,16 +270,22 @@ func ProcessObject(className string, tapString string, classSpace string, parseR
 		var varTypeValue int
 		switch value.(type) {
 		case bool:
+			/** 增加函数关键字的解析函数声明 */
+			classHProtectedArray = append(classHProtectedArray, fmt.Sprintf("%s\tbool Parse%s(rapidjson::Value& value);", tapString, formatName(key)))
 			varType, varName, parseInt = formatBool(key, curClassSpace, "object")
 			varTypeValue = 0
 			classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\tvalue.AddMember( \"%s\", this ->%s, document.GetAllocator());", key, varName))
 			classConstructFunc = append(classConstructFunc, fmt.Sprintf("%s\t\t%s=true;", tapString, varName))
 		case float64:
+			/** 增加函数关键字的解析函数声明 */
+			classHProtectedArray = append(classHProtectedArray, fmt.Sprintf("%s\tbool Parse%s(rapidjson::Value& value);", tapString, formatName(key)))
 			varType, varName, parseInt = formatFloat64(key, value.(float64), curClassSpace, "object")
 			varTypeValue = 0
 			classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\tvalue.AddMember( \"%s\", this ->%s, document.GetAllocator());", key, varName))
 			classConstructFunc = append(classConstructFunc, fmt.Sprintf("%s\t\t%s=0;", tapString, varName))
 		case string:
+			/** 增加函数关键字的解析函数声明 */
+			classHProtectedArray = append(classHProtectedArray, fmt.Sprintf("%s\tbool Parse%s(rapidjson::Value& value);", tapString, formatName(key)))
 			varType, varName, parseInt = formatString(key, curClassSpace, "object")
 			varTypeValue = 0
 			classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\tvalue.AddMember( \"%s\", this ->%s.c_str(), document.GetAllocator());", key, varName))
@@ -448,8 +453,8 @@ func ProcessArray(className string, tapString string, classSpace string, parseRe
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::Document document ;"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::Value jRoot( rapidjson::kArrayType );"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\tthis ->Marshal(jRoot,document);"))
-	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::GenericStringBuffer<rapidjson::UTF8<>> buffer;"))
-	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<>>> writer( buffer );"))
+	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::GenericStringBuffer<rapidjson::UTF8<> > buffer;"))
+	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\trapidjson::Writer<rapidjson::GenericStringBuffer<rapidjson::UTF8<> > > writer( buffer );"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\tjRoot.Accept( writer );"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("\treturn buffer.GetString();"))
 	classCPPMarshalFuncArray = append(classCPPMarshalFuncArray, fmt.Sprintf("}"))
